@@ -1,0 +1,675 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  
+ 
+}
+html{
+    scroll-behavior: smooth;
+}
+.scroll{
+    height: 25px;
+    width:25px;
+    position:fixed;
+    bottom:15px;
+    right: 15px;
+    text-align: center;
+    font-size: 29px;    
+}
+.scroll a{
+    color: white;
+}
+nav{ 
+    width: 100%;
+    height: 70px;
+      background-color:rgba(0,0,0,.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    border: 1px solid #111;
+    
+    
+    
+}
+nav .logo{
+    padding-left: 20px;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: sans-serif
+ 
+}
+
+
+nav ul{
+    display: flex;
+    padding-right: 20px;
+    
+    
+    
+}
+nav ul li{
+    list-style: none;
+    
+    
+    
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 18px;
+       
+}
+
+
+input[type="checkbox"]{
+    display:none;
+}
+.menu i{
+    cursor: pointer;
+    color: #fff;
+    display:none;
+}
+.hero{
+    width: 100%;
+    height:89.4vh;
+    background: url(image/read.jpg)
+        no-repeat center ;
+    background-size: cover;
+
+    
+}
+.hero .container{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    line-height: 1.3;
+    transition: transform 600s;
+    
+}
+.hero .container h1{
+    color: #993366;
+    font-family: sans-serif,monospace,arial;
+    font-size: 44px;
+    font-weight: 800;
+    transition: transform 1s;
+    margin-bottom: 8px;
+   
+}
+.hero .container h1:hover{
+    
+    transform: translateY(20px);
+    background: #111;
+    border-radius: 10px;
+    width: 300px;
+    
+}
+.hero .container h1::first-letter{
+    color:red;
+    font-style: italic;
+    font-weight:900;
+    letter-spacing: 4px;
+    font-size: 50px;
+    
+    
+}
+
+.hero .container p{
+    font-size: 30px;
+    color:black;
+    font-family: cursive,fantasy;
+    
+    
+} 
+.hero .container p span{
+    font-size: 38px;
+    color: crimson;
+    font-weight: 700;
+}
+
+.hero .container a{
+    margin: 10px;
+    padding: 10px;
+    font-size: 23px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background-color:grey;
+    box-shadow: 1px 1px 3px red;
+    transition: transform 1s;
+    
+} /*
+.hero .container a:hover{
+    background-color: blue;
+    color: black;
+    border: 1px solid black;
+    
+} */
+.hero .container a i{
+     height: 20px;
+    width: 20px;
+    transition: transform .1s;
+    
+}
+.hero .container a i:hover{
+    transform: rotate(36deg);
+    
+    color: black;
+}
+.about{
+       background-color: #333;
+    
+    
+}
+.about h1{
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 3px 3px 4px  #999;
+   
+   background: #111;
+}
+.about .image img{
+    width:35%;
+    height: 270px;
+    float: right;
+    margin: 10px;
+}
+.about .aboutme{
+    
+    width: 55%;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 22px;
+    text-align: justify;
+    
+   
+    
+    
+}
+.about .aboutme h4{
+    color: chocolate;
+    font-size: 30px;
+   
+    text-decoration-line: underline;
+    
+    
+    
+}
+.about .aboutme p{
+    color:black;
+    font-style: italic;
+}
+.about .aboutme p span{
+    color:lightseagreen;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;   
+}
+.skill{
+    width: 100%;
+    background-color: #333;
+    
+ 
+   
+    
+}
+.skill h1{
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 3px 3px 4px  #999;
+   background: #111;
+  
+}
+.skills{
+    width: 700px;
+    padding: 50px;
+    list-style: none;
+    color: #111;
+    margin-left: 50px
+    
+  
+}
+skill li{
+  
+    
+  
+}
+.bar{
+    background-color: #353b48;
+    display:block;
+    height: 20px;
+    overflow: hidden;
+    border-radius: 10px;  
+}
+.bar span{
+    height: 20px;
+    background:linear-gradient(red,yellow,green 70%);
+    float: left;
+}
+.htm{
+    width: 90%;
+    animation: htm 4s;
+}
+
+    .py{
+    width: 60%;
+    animation: py 4s;
+}
+
+    .c{
+    width: 70%;
+    animation: c 4s;
+}
+
+    .css{
+    width: 50%;
+    animation: css 4s;
+}
+
+    .js{
+    width: 90%;
+    animation:js 4s;
+}
+
+    .php{
+    width: 20%;
+    animation: htm 4s;
+}
+
+    .htm{
+    width: 90%;
+    animation: htm 4s;
+}
+.wrapper{
+    width: 100%;
+    background: #333;   
+}
+.wrapper .apper{
+    width: 100%;   
+    background-color: #333;
+    overflow: hidden;
+}
+.wrapper h1{
+      text-align: center;
+    font-size: 60px;
+    text-shadow: 3px 3px 4px #999;
+   background: #111;
+    
+}
+.wrapper .apper .service{
+    width: 31%;
+    height:35vh;
+    box-shadow:1px 5px 8px #111;
+    padding:10px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+
+    
+    text-align: center;
+     float:left;
+    
+  
+   
+    
+    
+    
+}
+.wrapper .service i{
+    font-size: 25px;
+    border:1px solid #888;
+    background-color:#444;
+    border-radius: 10px;
+    padding: 4px;
+    margin-top: 8px;
+
+    
+}
+.wrapper .service h3{
+    color:#ab39;
+    
+    
+}
+.wrapper .service p{
+    font-size:15px;
+    text-align: left;
+    font-family:monospace;
+    
+}
+.contact{
+    width: 100%;
+    background-color: #333;
+    min-height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+   
+   
+  
+    
+    
+    
+}
+.contact h1{
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 3px 3px 4px #999;
+   background: #111;   
+}
+.contact .contacts{
+    width: 45%;
+    box-shadow: 1px 2px 12px #999;
+    float: right;
+  
+   margin: 30px auto;
+    margin-right: 20px;
+    font-size: 25px;
+    padding: 20px;
+}
+.contact .contacts h2{
+    text-align: center;
+}
+.contact .contacts lebel{
+    color:inherit;
+    font-size: 25px;
+   padding-top: 10px;
+    
+  
+    
+}
+.contact .contacts input{
+    background-color:#050509;
+    font-size: 15px;
+    padding: 8px;
+    width: 100%;
+    height: 40px;
+ 
+}
+.contact .contacts button{
+    float: right;
+    margin-top: 15px;
+    background: #333;
+    color: black;
+    box-shadow: 1px 2px 8px #222;
+    margin-right: 30px;
+    font-size: 25px;
+    border-radius:10px;
+    margin-bottom: 5px;
+}
+.contact .adress {
+    width: 48%;
+    margin-top:30px;
+    margin-left: 40px;
+    height: 69vh;
+
+    
+    
+}
+.contact .adress div {
+    padding:35px; 
+    font-size: 23px;
+    font-weight: 900;
+    font-family: sans-serif;
+    
+}
+.contact .adress div i{
+    border: 1px solid gray;
+    background-color: #57737e; 
+    font-size: 25px;
+    border-radius: 3px;  
+}
+.footers{
+    width: 100%;
+    height: 12vh;
+    background-color: #111;
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-size: cover;
+    overflow: hidden;   
+}
+
+.footer .home,.created, .link{
+         padding: 10px;
+    text-align: center;
+}
+
+.footers .created p{
+    color:white;
+    font-size: 20px;
+    
+}
+.footers .created p span{
+    color: red;
+}
+.footers .home a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 20px;
+    
+}
+.footers .link a{
+   padding: 10px;
+    font-size: 23px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background-color:grey;
+    box-shadow: 1px 1px 3px red;
+    transition: transform 1s;
+ 
+}
+.footers .link{
+    padding-right: 15px;
+    
+}
+/*
+.footers .home{
+    
+}
+    
+.footers .created{
+    
+}
+.footers .created p{
+    
+}
+.footers .created p span{
+    
+}
+.footers .link{
+    
+}
+.footers .link a{
+    
+}
+.footers .link a i{
+    
+}
+*/
+/*responsive to here*/
+/*responsive  to here */
+/*responsive to here */
+
+
+
+ @media (max-width:900px){
+    
+    nav .logo{
+        font-size: 16px;
+    }
+    
+    nav ul li a{
+        
+       
+    
+        
+    }
+    nav ul li{
+        padding-top: 15px;
+         color: white;
+        
+        
+     }
+    nav ul{
+        display:block;
+        position: fixed;
+        top: 70px;
+        text-align: center;
+        background-color:rgba(0,0,0,.5);
+        right: -100%;
+        transition: all 0.3s ease;
+        z-index: 9;
+        padding: 20px 10px;
+        border-radius: 10px;
+        
+        
+        
+        
+    }
+     nav{
+        
+     }
+    #click:checked~ .menu i:before{
+        content:"\f00d";
+    }
+    #click:checked~ ul{
+        right:0;
+        
+    }
+     
+    
+    .menu i{
+        padding-right: 20px;
+        display: block;
+    }
+     .about .image img{
+         width: 90%;
+         margin:20px;
+     }
+     .about .aboutme{
+         width: 100%;
+         text-align: center;
+     }
+     .skills{
+         width:90%;
+     }
+     .hero .container h1{
+         margin-left: 55px;
+     }
+     .wrapper .apper .service{
+         width: 45%;
+     }
+     .contact .contacts{
+         width: 90%;
+         height: auto;
+          float: none;
+     }
+     .contact .adress{
+         width: 90%;
+         height: auto;
+      
+        
+        
+        
+     }
+     .contact .adress div{
+        font-size: 15px;
+        padding: 10px;
+        width: 80%;
+    }
+     .footers .link a{
+         font-size: 15px;
+         padding: 2px;
+     }
+     .footers .home a{
+         font-size: 15px;
+     }
+     .footers .created{
+         font-size: 20px;
+     }
+     .contact .contacts button{
+    
+    margin-top: 5px;
+    
+    
+    
+    margin-right: 3px;
+    
+    
+    
+}
+}
+/*responsive for laptops*/
+
+/*
+@media (max-width:900px){
+     .wrapper .service{
+         width: 45%;
+     }
+     
+}
+*/
+@media (max-width:400px){
+    .hero{
+        width:100%;
+        
+    }
+    .hero .container{
+        width:300px;
+        font-size: 7px;
+        padding: 2px;
+       
+    }
+     .hero .container a{
+        font-size: 15px;
+        padding: 0px;
+        margin: 5px;
+    }
+    .hero .container h1{
+        margin: 0px;
+        font-size:30px;
+        padding: 0px;
+    }
+
+  
+.wrapper .apper .service{
+         width: 90%;
+     }
+    .skills{
+        width: 90%;
+    }
+    .contact .contacts{
+         width: 80%;
+         float: none;
+     }
+     .contact .adress{
+         width: 90%;   
+     }
+    .contact .adress div{
+        font-size: 14px;
+        padding: 10px;
+        width: 94%;
+    }
+    .footers{
+       height: 30vh;
+        display: block;
+        font-size: 10px;
+        padding: 40px 10px;
+        text-align: center;
+    }
+    
+}
+
+
+
